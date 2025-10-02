@@ -5,6 +5,8 @@ import sys
 import os
 
 
+
+
 # Initialize player statistics and backpack
 backpack = []
 player_statistics = {
@@ -58,10 +60,14 @@ def office_space():
         elif choice == "exit":
             print("Exiting the game. Goodbye!")
             break       
-
+        elif choice == "end game":
+            print("Exiting the game. Goodbye!")
+            sys.exit()
         else:
             print("Invalid choice. Please type 'use computer' or 'go left'.")
 print("Welcome to the Text Adventure Game!")
+
+print("type 'end game' to exit the game.")
 
 
 
@@ -92,6 +98,9 @@ while True:
         # Check backpack items
         check_backpack()
         time.sleep(2)
+    elif choice == "end game":
+        print("Exiting the game. Goodbye!")
+        break   
 
     else:
         # Handle invalid input
