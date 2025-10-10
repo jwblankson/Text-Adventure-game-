@@ -1,2 +1,2 @@
-{'health': 5, 'wealth': 0, 'treasures_found': 0}
+{'health': 100, 'wealth': 0, 'treasures_found': 0}
 []
